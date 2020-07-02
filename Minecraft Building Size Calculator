@@ -5,4 +5,4 @@ length= int(input("Please enter the length of your desired building: "))
 height = int(input("Please enter the height of your desired building: "))
 
 blocks_needed = int((width + width) + (length + length) - 4) * height
-print ("You will need " + str(blocks_needed) + block_type " blocks to create your building.")
+print ("You will need " + str(blocks_needed) + block_type + " blocks to create your building.")
