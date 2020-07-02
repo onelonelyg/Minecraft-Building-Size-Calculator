@@ -1,8 +1,14 @@
 starting_block = input("What block do you currently have? ")
 block_type = input("What block will you be building with: ")
+coal = ""
+
 width = int(input("Please enter the width of your desired building: "))
 length= int(input("Please enter the length of your desired building: "))
 height = int(input("Please enter the height of your desired building: "))
 
 blocks_needed = int((width + width) + (length + length) - 4) * height
-print ("You will need " + str(blocks_needed) + block_type + " blocks to create your building.")
+if starting_block.lower() == "cobblestone" and block_type.lower() == "stone":
+    coal = blocks_needed / 8
+    print("You will need " + str(blocks_needed) + block_type + "and " + str(coal) + " blocks to create your building."
+else:
+    print ("You will need " + str(blocks_needed) + block_type + " blocks to create your building.")
