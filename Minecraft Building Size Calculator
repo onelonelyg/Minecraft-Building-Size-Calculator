@@ -9,6 +9,6 @@ height = int(input("Please enter the height of your desired building: "))
 blocks_needed = int((width + width) + (length + length) - 4) * height
 if starting_block.lower() == "cobblestone" and block_type.lower() == "stone":
     coal = blocks_needed / 8
-    print("You will need " + str(blocks_needed) + block_type + "and " + str(coal) + " blocks to create your building."
+    print("You will need " + str(blocks_needed) + " " + starting_block + " blocks and " + str(coal) + " coal to create your building.")
 else:
-    print ("You will need " + str(blocks_needed) + block_type + " blocks to create your building.")
+    print ("You will need " + str(blocks_needed) + " " + block_type + " blocks to create your building.")
