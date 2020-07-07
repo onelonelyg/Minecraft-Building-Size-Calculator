@@ -7,7 +7,11 @@ length= int(input("Please enter the length of your desired building: "))
 height = int(input("Please enter the height of your desired building: "))
 
 blocks_needed = int((width + width) + (length + length) - 4) * height
-if starting_block.lower() == "cobblestone" and block_type.lower() == "stone":
+
+if starting_block.lower() == "cobblestone" and block_type.lower() == "stone" or "stone brick":
+    coal = blocks_needed / 8
+    print("You will need " + str(blocks_needed) + " " + starting_block + " blocks and " + str(coal) + " coal to create your building.")
+elif starting_block.lower() == "sand" and block_type.lower() == "glass":
     coal = blocks_needed / 8
     print("You will need " + str(blocks_needed) + " " + starting_block + " blocks and " + str(coal) + " coal to create your building.")
 else:
